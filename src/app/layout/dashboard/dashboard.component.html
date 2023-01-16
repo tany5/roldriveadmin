@@ -1,0 +1,16 @@
+<mat-drawer-container
+  class="example-container w-full h-full bg-[#FEF8F4]"
+  autosize
+>
+  <mat-drawer #drawer class="example-sidenav w-72" mode="side" opened>
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+
+  <div class="example-sidenav-content h-full w-full px-12 py-10">
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    <button type="button" mat-button>
+      Toggle sidenav
+    </button>
+  </div>
+</mat-drawer-container>

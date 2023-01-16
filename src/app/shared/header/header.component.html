@@ -1,0 +1,29 @@
+<mat-toolbar class="bg-[#FEF8F4]">
+  <div class="flex flex-col">
+    <span class="font-normal text-sm text-gray-400 mb-1">Pages / Profile</span>
+    <span class="font-bold text-3xl">Profile</span>
+  </div>
+  <div class="flex-auto"></div>
+  <button
+    mat-icon-button
+    class="example-icon favorite-icon"
+    aria-label="Example icon-button with heart icon"
+  >
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button
+    mat-icon-button
+    [matMenuTriggerFor]="menu"
+    aria-label="Example icon-button with a menu"
+  >
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu" xPosition="before">
+    <button mat-menu-item>
+      <span class="w-80 mr-20">Admin Profile</span>
+    </button>
+    <button mat-menu-item>
+      <span class="w-80 mr-20">a</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>
