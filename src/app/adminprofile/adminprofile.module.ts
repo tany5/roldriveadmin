@@ -1,5 +1,3 @@
-import { SharedModule } from './../shared/shared.module';
-import { AngularmaterialmoduleModule } from './../angularmaterialmodule/angularmaterialmodule.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
