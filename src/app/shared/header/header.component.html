@@ -1,7 +1,7 @@
-<mat-toolbar class="bg-[#FEF8F4]">
+<mat-toolbar class="bg-[#FEF8F4] !p-0 mt-3 !h-auto">
   <div class="flex flex-col">
-    <span class="font-normal text-sm text-gray-400 mb-1">Pages / Profile</span>
-    <span class="font-bold text-3xl">Profile</span>
+    <app-span className="text-tgrey">Pages / Profile</app-span>
+    <app-h1 className="font-bold">Profile</app-h1> 
   </div>
   <div class="flex-auto"></div>
   <button
@@ -18,22 +18,6 @@
   >
     <mat-icon>more_vert</mat-icon>
   </button>
-  <mat-menu #menu="matMenu" xPosition="before">
-    <button mat-menu-item>
-      <span class="w-80 pr-24">Admin Profile</span>
-    </button>
-    <button mat-menu-item>
-      <span class="w-80 pr-24">Admin Profile</span>
-    </button>
-    <button mat-menu-item>
-      <span class="w-80 pr-24">Admin Profile</span>
-    </button>
-    <button mat-menu-item>
-      <span class="w-80 pr-24">Admin Profile</span>
-    </button>
-    <button mat-menu-item>
-      <span class="w-80 pr-24">Admin Profile</span>
-    </button>
-    
-  </mat-menu>
+  <app-dropdown [menuRef]="menu" poistion="before" [menuItems]="dropMenuItems"></app-dropdown>
+  
 </mat-toolbar>

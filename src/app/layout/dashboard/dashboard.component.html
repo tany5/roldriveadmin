@@ -6,11 +6,10 @@
     <app-sidebar></app-sidebar>
   </mat-drawer>
 
-  <div class="example-sidenav-content h-full w-full px-12 py-10">
+  <div class="example-sidenav-content h-full w-full pl-16 pr-20 py-10">
     <app-header></app-header>
-    <router-outlet></router-outlet>
-    <button type="button" mat-button>
-      Toggle sidenav
-    </button>
+    <div class="py-8">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </mat-drawer-container>

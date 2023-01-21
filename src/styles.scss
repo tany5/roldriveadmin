@@ -1,8 +1,7 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
-@import './app/colors';
+@use "@angular/material" as mat;
+@import "./app/colors";
 
 // Plus imports for other components in your app.
 
@@ -22,13 +21,15 @@ $roldriveadmin-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$roldriveadmin-theme: mat.define-light-theme((
-  color: (
-    primary: $roldriveadmin-primary,
-    accent: $roldriveadmin-accent,
-    warn: $roldriveadmin-warn,
+$roldriveadmin-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $roldriveadmin-primary,
+      accent: $roldriveadmin-accent,
+      warn: $roldriveadmin-warn,
+    ),
   )
-));
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -38,5 +39,11 @@ $roldriveadmin-theme: mat.define-light-theme((
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
